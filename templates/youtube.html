@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>YouTube Analysis</title>
+<link rel="stylesheet" href="/static/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.1/wordcloud2.min.js"></script>
+
+<script src="/static/script.js"></script>
+</head>
+
+<body>
+
+<a href="/">⬅ Back</a>
+
+<h2>YouTube Sentiment Analysis</h2>
+
+<input id="url" placeholder="Paste YouTube link">
+<button onclick="analyze()">Analyze</button>
+
+<p id="result"></p>
+<div class="emotion-meter">
+
+<p id="emotion-text"></p>
+
+<div class="meter-bar">
+<div id="meter-fill"></div>
+</div>
+
+</div>
+
+<div class="dashboard">
+
+<div class="chart-box">
+<canvas id="chart"></canvas>
+</div>
+
+<div class="words">
+
+<h3>Top Positive Words</h3>
+<ul id="positive_words"></ul>
+
+<h3>Top Negative Words</h3>
+<ul id="negative_words"></ul>
+
+</div>
+
+</div>
+
+<h3>Word Cloud</h3>
+
+<div id="wordcloud"></div>
+
+</body>
+</html>
